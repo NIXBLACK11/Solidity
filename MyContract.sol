@@ -2,15 +2,7 @@
 pragma solidity ^0.7.4;
 
 contract MyContract {
-    string value;
-
-    constructor() {
-        value = "myValue";
-    }
-
-    function get() public view returns(string memory){
-        return value;
-    }
+    string public value = "default";
 
     function set(string memory _value ) public {
         value = _value;
